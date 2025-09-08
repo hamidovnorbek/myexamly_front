@@ -348,7 +348,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h5 className="font-bold">Farid Raxmonov</h5>
-                    <p className="text-sm text-muted-foreground">Muhammad Al-Xorazmiy nomidagi tayanch IM OʻIBDOʻ</p>
+                    <p className="text-sm text-muted-foreground">Muhammad Al-Xorazmiy nomidagi ixtisoslashtirilgan maktab Buxoro filialining OʻIBDOʻ.</p>
                   </div>
                 </div>
                 <p className="text-muted-foreground italic">MyExamly bizning baholash jarayonimizni tubdan o‘zgartirdi. BSB va CHSB imtihonlarini boshqarish jarayoni endi juda qulay va xavfsiz tarzda amalga oshmoqda.</p>
@@ -362,11 +362,11 @@ export default function Home() {
                     <Users className="text-secondary w-6 h-6" />
                   </div>
                   <div>
-                    <h5 className="font-bold">Prof. Michael Chen</h5>
-                    <p className="text-sm text-muted-foreground">Department Head</p>
+                    <h5 className="font-bold">Murodulla Sharopov</h5>
+                    <p className="text-sm text-muted-foreground">Muhammad Al-Xorazmiy nomidagi ixtisoslashtirilgan maktab Buxoro filialining informatika fani o'qituvchisi</p>
                   </div>
                 </div>
-                <p className="text-muted-foreground italic">"The analytics and reporting features provide invaluable insights into student performance and learning outcomes."</p>
+                <p className="text-muted-foreground italic">Tahlil va hisobot imkoniyatlari talabalarning o‘qishdagi yutuqlari va ta’limiy natijalarini yanada chuqurroq va aniqroq ko‘rib chiqishga yordam berdi.</p>
               </CardContent>
             </Card>
 
@@ -377,11 +377,11 @@ export default function Home() {
                     <Users className="text-accent w-6 h-6" />
                   </div>
                   <div>
-                    <h5 className="font-bold">Lisa Martinez</h5>
-                    <p className="text-sm text-muted-foreground">IT Administrator</p>
+                    <h5 className="font-bold">Xudoyberdiyeva Nilufar</h5>
+                    <p className="text-sm text-muted-foreground">Muhammad Al-Xorazmiy nomidagi ixtisoslashtirilgan maktab Buxoro filialining matematika fani o'qituvchisi</p>
                   </div>
                 </div>
-                <p className="text-muted-foreground italic">"Implementation was smooth, and the security features give us complete confidence in our exam integrity."</p>
+                <p className="text-muted-foreground italic">Tizimni joriy etish jarayoni muammosiz amalga oshirildi, xavfsizlik choralarining mavjudligi esa imtihonlarning halolligi va ishonchliligini to‘liq ta’minladi.</p>
               </CardContent>
             </Card>
           </div>
