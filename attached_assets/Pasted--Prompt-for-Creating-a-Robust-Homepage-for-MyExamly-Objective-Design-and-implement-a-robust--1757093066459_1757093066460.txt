@@ -1,0 +1,103 @@
+# Prompt for Creating a Robust Homepage for "MyExamly"
+
+## Objective
+
+Design and implement a robust, reliable, and elegant homepage for **MyExamly**. The homepage must clearly communicate who we are, what our platform does, our aim and goals, and highlight the specific exam types we support (including BSB and CHSB). The content and structure should inspire trust, professionalism, and clarity for all users.
+
+## Key Elements
+
+1. **Who We Are**
+   - Briefly introduce the MyExamly team or organization.
+   - Emphasize expertise in educational technology and exam management.
+   - Show commitment to innovation, integrity, and user empowerment.
+
+2. **Our Aim**
+   - Clearly state the purpose: to simplify and modernize the organization, administration, and evaluation of exams for schools, teachers, and students.
+   - Address the challenges of traditional exam processes, such as inefficiency and lack of transparency.
+
+3. **Our Goals**
+   - Drive efficiency, fairness, and transparency in exam management.
+   - Provide insightful analytics and reporting for continuous improvement.
+   - Ensure security and accessibility for all users.
+   - Support diverse exam types, adapting to the unique needs of institutions.
+
+4. **Supported Exam Types**
+   - **BSB** (Birinchi Sinov Boshqaruvi)
+   - **CHSB** (Chorak Sinov Boshqaruvi)
+   - Clearly explain each exam type and its significance in the educational process.
+
+5. **Features Overview**
+   - Automated exam scheduling and management.
+   - Secure, role-based access for teachers, admins, and superadmins.
+   - Customizable exam creation (subjects, classes, serial numbers, exam types).
+   - Task/problem management and grading.
+   - Advanced analytics and reporting.
+   - User and role management.
+
+6. **Call to Action (CTA)**
+   - Buttons/links: "Get Started", "Request a Demo", "Learn More".
+   - Easy navigation to deeper sections: Features, About, Contact, Documentation, etc.
+
+7. **Design Considerations**
+   - Clean, modern, and responsive UI.
+   - Accessible to all user types.
+   - Consistent branding (colors, logo, etc.).
+
+8. **Optional Sections**
+   - Testimonials or success stories.
+   - Partner/client logos.
+   - Links to resources, blog, or documentation.
+
+## Sample Content Structure
+
+```markdown
+# Welcome to MyExamly
+
+**Empowering schools and educators to manage BSB, CHSB, and other exams efficiently and securely.**
+
+---
+
+## Who We Are
+
+MyExamly is a dedicated team of education and technology specialists transforming how exams are managed. We provide tools for teachers, admins, and superadmins to create, conduct, and evaluate exams with confidence.
+
+---
+
+## Our Aim
+
+Our aim is to make exam management seamless, transparent, and reliable for every school, class, and subject.
+
+---
+
+## Our Goals
+
+- Simplify exam creation and administration.
+- Enhance security and fairness.
+- Provide actionable insights and analytics.
+- Foster accessibility and inclusivity.
+- Support all core exam types, including BSB and CHSB.
+
+---
+
+## Supported Exam Types
+
+- **BSB:** Birinchi Sinov Boshqaruvi – for baseline and entry assessments.
+- **CHSB:** Chorak Sinov Boshqaruvi – for quarterly or milestone assessments.
+
+---
+
+## Key Features
+
+- Exam creation for BSB, CHSB, and more.
+- Automated scheduling and notifications.
+- Multi-role permissions (teacher, admin, superadmin).
+- Problem/task management and grading.
+- Analytics dashboards and reports.
+
+---
+
+## Ready to Transform Exam Management?
+
+[Get Started] [Request a Demo] [Learn More]
+
+---

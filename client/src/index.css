@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Education-themed color palette */
+  --background: hsl(210, 40%, 98%);
+  --foreground: hsl(222.2, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222.2, 84%, 4.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222.2, 84%, 4.9%);
+  
+  /* Primary - Education Blue */
+  --primary: hsl(221, 83%, 53%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  
+  /* Secondary - Education Green */
+  --secondary: hsl(158, 64%, 52%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  
+  /* Accent - Education Orange */
+  --accent: hsl(32, 95%, 44%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215.4, 16.3%, 46.9%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --ring: hsl(221, 83%, 53%);
+  
+  /* Chart colors */
+  --chart-1: hsl(221, 83%, 53%);
+  --chart-2: hsl(158, 64%, 52%);
+  --chart-3: hsl(32, 95%, 44%);
+  --chart-4: hsl(271, 91%, 60%);
+  --chart-5: hsl(340, 75%, 55%);
+  
+  /* Sidebar colors */
+  --sidebar-background: hsl(0, 0%, 100%);
+  --sidebar-foreground: hsl(222.2, 84%, 4.9%);
+  --sidebar-primary: hsl(221, 83%, 53%);
+  --sidebar-primary-foreground: hsl(210, 40%, 98%);
+  --sidebar-accent: hsl(210, 40%, 96%);
+  --sidebar-accent-foreground: hsl(221, 83%, 53%);
+  --sidebar-border: hsl(214.3, 31.8%, 91.4%);
+  --sidebar-ring: hsl(221, 83%, 53%);
+  
+  /* Typography */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Georgia', serif;
+  --font-mono: 'Menlo', monospace;
+  
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(222.2, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --card: hsl(222.2, 84%, 4.9%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --popover: hsl(222.2, 84%, 4.9%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  
+  /* Primary - Lighter blue for dark mode */
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222.2, 84%, 4.9%);
+  
+  /* Secondary - Darker green for dark mode */
+  --secondary: hsl(158, 54%, 42%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  
+  /* Accent - Lighter orange for dark mode */
+  --accent: hsl(32, 85%, 54%);
+  --accent-foreground: hsl(222.2, 84%, 4.9%);
+  
+  --muted: hsl(217.2, 32.6%, 17.5%);
+  --muted-foreground: hsl(215, 20.2%, 65.1%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217.2, 32.6%, 17.5%);
+  --input: hsl(217.2, 32.6%, 17.5%);
+  --ring: hsl(217, 91%, 60%);
+  
+  /* Chart colors - adjusted for dark mode */
+  --chart-1: hsl(217, 91%, 60%);
+  --chart-2: hsl(158, 54%, 42%);
+  --chart-3: hsl(32, 85%, 54%);
+  --chart-4: hsl(271, 81%, 70%);
+  --chart-5: hsl(340, 65%, 65%);
+  
+  /* Sidebar colors - dark mode */
+  --sidebar-background: hsl(222.2, 84%, 4.9%);
+  --sidebar-foreground: hsl(210, 40%, 98%);
+  --sidebar-primary: hsl(217, 91%, 60%);
+  --sidebar-primary-foreground: hsl(222.2, 84%, 4.9%);
+  --sidebar-accent: hsl(217.2, 32.6%, 17.5%);
+  --sidebar-accent-foreground: hsl(217, 91%, 60%);
+  --sidebar-border: hsl(217.2, 32.6%, 17.5%);
+  --sidebar-ring: hsl(217, 91%, 60%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  /* Custom animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-in-from-left {
+    from {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-in-from-right {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-in-from-bottom {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-in-from-top {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoom-in {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-in {
+    animation-fill-mode: both;
+  }
+  
+  .fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  .slide-in-from-left {
+    animation: slide-in-from-left 0.8s ease-out;
+  }
+  
+  .slide-in-from-right {
+    animation: slide-in-from-right 0.8s ease-out;
+  }
+  
+  .slide-in-from-bottom {
+    animation: slide-in-from-bottom 0.6s ease-out;
+  }
+  
+  .slide-in-from-top-2 {
+    animation: slide-in-from-top 0.2s ease-out;
+  }
+  
+  .zoom-in-95 {
+    animation: zoom-in 0.3s ease-out;
+  }
+  
+  .duration-200 {
+    animation-duration: 200ms;
+  }
+  
+  .duration-300 {
+    animation-duration: 300ms;
+  }
+  
+  .duration-500 {
+    animation-duration: 500ms;
+  }
+  
+  .duration-1000 {
+    animation-duration: 1000ms;
+  }
+  
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+  
+  .delay-600 {
+    animation-delay: 600ms;
+  }
+  
+  .delay-800 {
+    animation-delay: 800ms;
+  }
+}
