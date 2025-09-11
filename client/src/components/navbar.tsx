@@ -44,11 +44,11 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-45">
           <div className="flex items-center space-x-2">
-            <div className="w-40 h-20 rounded-lg flex items-center justify-center">
+            <div className="w-64 h-16 rounded-lg flex items-center justify-center">
               <img 
                 src={theme === 'dark' ? logoDark : logoLight}
                 alt="Logo"
-                className="max-w-full max-h-full object-contain"
+                className="w-full h-full object-contain"
                 onError={(e) => {
                   console.error('Logo failed to load:', e.currentTarget.src);
                   console.log('Fallback to text logo');
