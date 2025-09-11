@@ -45,21 +45,17 @@ export function Navbar() {
         <div className="flex items-center justify-between h-45">
           <div className="flex items-center space-x-2">
             <div className="w-40 h-20 rounded-lg flex items-center justify-center">
-              <div className="text-2xl font-bold text-primary">
-                MyExamly
-              </div>
-              {/* Temporarily hidden image while debugging
               <img 
                 src={theme === 'dark' ? logoDark : logoLight}
                 alt="Logo"
                 className="max-w-full max-h-full object-contain"
                 onError={(e) => {
                   console.error('Logo failed to load:', e.currentTarget.src);
-                  e.currentTarget.style.display = 'none';
+                  console.log('Fallback to text logo');
+                  e.currentTarget.outerHTML = '<div class="text-2xl font-bold text-primary">MyExamly</div>';
                 }}
                 onLoad={() => console.log('Logo loaded successfully:', theme === 'dark' ? 'dark logo' : 'light logo')}
               />
-              */}
             </div>
           </div>
 
