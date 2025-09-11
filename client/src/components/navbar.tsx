@@ -3,6 +3,9 @@ import { useLanguage } from "@/hooks/use-language";
 import { useTheme } from "@/components/theme-provider";
 import { getLanguageOptions, Language } from "@/lib/i18n";
 import { Globe, Sun, Moon, Menu, X } from "lucide-react";
+// Import images directly to ensure they work in production
+import logoLight from "../assets/logo1.png";
+import logoDark from "../assets/darkmodelogo.png";
 
 export function Navbar() {
   const { language, setLanguage, t } = useLanguage();
@@ -43,7 +46,7 @@ export function Navbar() {
           <div className="flex items-center space-x-2">
             <div className="w-40 h-20 rounded-lg flex items-center justify-center">
               <img 
-                src={theme === 'dark' ? "/darkmodelogo.png?v=1" : "/logo1.png?v=1"}
+                src={theme === 'dark' ? logoDark : logoLight}
                 alt="Logo"
                 className="max-w-full max-h-full object-contain"
                 onError={(e) => {
