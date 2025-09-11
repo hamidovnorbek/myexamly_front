@@ -57,7 +57,7 @@ export function ContactModal({ isOpen, onClose, type }: ContactModalProps) {
     e.preventDefault();
 
     if (
-      !formData.name ||
+      !formData.name ||server/index
       !formData.phone ||
       !formData.institution ||
       !formData.message
