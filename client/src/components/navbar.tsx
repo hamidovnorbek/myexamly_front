@@ -48,13 +48,6 @@ export function Navbar() {
               <img 
                 src={theme === 'dark' ? logoDark : logoLight}
                 alt="Logo"
-                className="w-full h-full object-contain"
-                onError={(e) => {
-                  console.error('Logo failed to load:', e.currentTarget.src);
-                  console.log('Fallback to text logo');
-                  e.currentTarget.outerHTML = '<div class="text-2xl font-bold text-primary">MyExamly</div>';
-                }}
-                onLoad={() => console.log('Logo loaded successfully:', theme === 'dark' ? 'dark logo' : 'light logo')}
               />
             </div>
           </div>
