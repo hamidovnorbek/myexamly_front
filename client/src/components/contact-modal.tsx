@@ -29,7 +29,7 @@ export function ContactModal({ isOpen, onClose, type }: ContactModalProps) {
 
   const contactMutation = useMutation({
     mutationFn: async (data: typeof formData & { type: string }) => {
-      const response = await apiRequest("POST", "/api/contact", data);
+      const response = await apiRequest("POST", "https://platform.myexamly.uz/api/contact", data);
       return response.json();
     },
     onSuccess: () => {
