@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap location (update this URL when you create a sitemap)
+Sitemap: https://my.examly.uz/sitemap.xml
+
+# Allow search engines to crawl all important pages
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /contact
+
+# Disallow development and admin areas if they exist
+Disallow: /admin
+Disallow: /api/
+Disallow: /.env
+Disallow: /node_modules
+Disallow: /src
